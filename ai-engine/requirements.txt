@@ -1,4 +1,0 @@
-redis
-pydantic
-ortools
-scikit-learn
