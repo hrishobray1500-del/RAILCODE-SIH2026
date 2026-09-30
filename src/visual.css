@@ -1,0 +1,382 @@
+:root {
+  --navy: #17263f;
+  --blue: #2563eb;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --green: #15803d;
+  background: #f6f8fb;
+  color: #1e293b;
+}
+
+button,
+select,
+input,
+textarea {
+  accent-color: var(--blue);
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+.brand-name {
+  color: #fff !important;
+  font-size: 19px !important;
+  letter-spacing: 1.1px !important;
+}
+
+.brand-mark,
+.button-primary {
+  background: var(--blue);
+}
+
+.button-primary:hover {
+  background: #1d4ed8;
+}
+
+.nav-link.active {
+  background: #243c60;
+  box-shadow: inset 3px 0 #60a5fa;
+}
+
+.nav-link.active svg,
+.integration-icon,
+.metric-icon.blue,
+.metric-icon.violet,
+.metric-icon.teal,
+.metric-icon.amber {
+  color: #2563eb;
+}
+
+.metric-icon.blue,
+.metric-icon.violet,
+.metric-icon.teal,
+.metric-icon.amber {
+  background: #eff6ff;
+}
+
+.content {
+  max-width: 1360px;
+  padding-top: 30px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.page-title-row {
+  margin-bottom: 23px;
+}
+
+.page-title-row h1 {
+  font-size: 27px;
+  letter-spacing: -0.8px;
+}
+
+.page-subtitle {
+  max-width: 680px;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.section-kicker {
+  color: #64748b;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.card,
+.metric-card {
+  border-color: #e5eaf1;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #17263f08;
+}
+
+.card-heading h2,
+.work-header h2,
+.section-header h2,
+.gantt-header h2 {
+  font-size: 15px;
+}
+
+.metrics-grid {
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.metric-card {
+  padding: 17px 18px;
+}
+
+.metric-value {
+  color: #17263f;
+  font-size: 24px;
+}
+
+.dashboard-grid.overview-dashboard,
+.dashboard-grid.analytics-dashboard,
+.corridor-page-grid,
+.coordination-grid.health-grid,
+.coordination-grid.coordination-page-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.dashboard-grid.overview-dashboard .availability-card,
+.dashboard-grid.analytics-dashboard .availability-card {
+  padding: 22px 24px 18px;
+}
+
+.overview-dashboard .chart-wrap,
+.analytics-dashboard .chart-wrap {
+  height: 205px;
+}
+
+.corridor-page-grid .corridor-card {
+  padding: 23px 25px;
+}
+
+.corridor-page-grid .corridor-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 28px;
+  margin: 18px 0 10px;
+}
+
+.corridor-page-grid .corridor-row {
+  min-height: 84px;
+  padding: 13px 8px;
+}
+
+.corridor-page-note {
+  padding-top: 12px;
+  border-top: 1px solid #edf1f6;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.command-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.utilization-card {
+  grid-column: 1 / -1;
+}
+
+.utilization-content {
+  justify-content: flex-start;
+}
+
+.utilization-details {
+  max-width: 520px;
+}
+
+.integration-strip {
+  border-color: #dbeafe;
+  background: #eff6ff;
+  border-radius: 9px;
+  color: #475569;
+  padding: 8px 12px;
+}
+
+.integration-icon {
+  background: #dbeafe;
+}
+
+.live-pill {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #dbeafe;
+}
+
+.live-pill > span,
+.sim-status-dot,
+.simulated-badge,
+.system-dot.simulated {
+  background: #2563eb;
+}
+
+.sample-tag {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.gantt-card {
+  padding: 22px 24px !important;
+}
+
+.gantt-header p,
+.gantt-card .timeline-legend {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.gantt-scroller {
+  border-radius: 9px;
+}
+
+.gantt-block {
+  border-color: #15803d;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.gantt-block:hover {
+  background: #bbf7d0;
+}
+
+.alert-icon.critical {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+.badge.critical,
+.badge.emergency-proposal {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+.badge.high,
+.badge.proposed,
+.badge.under-review {
+  color: #a16207;
+  background: #fffbeb;
+}
+
+.badge.confirmed,
+.badge.scheduled,
+.badge.completed {
+  color: #166534;
+  background: #f0fdf4;
+}
+
+.resource-chip.confirmed i {
+  background: #15803d;
+}
+
+.coordination-grid,
+.bottom-grid {
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.work-card {
+  margin-bottom: 18px;
+}
+
+.work-header {
+  padding: 18px 20px 14px;
+}
+
+.advanced-filters {
+  padding: 0 20px 14px;
+  gap: 9px;
+}
+
+.filter-select,
+.search-box,
+.work-header input,
+.controller-edit-modal input,
+.controller-edit-modal select,
+.controller-edit-modal textarea {
+  border-radius: 7px;
+}
+
+.table-scroll {
+  border-top: 1px solid #edf1f6;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.row-more:hover,
+.gantt-block:hover,
+.button,
+.nav-link {
+  transition: color 0.16s ease, background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.coordination-grid.health-grid .integration-health-card,
+.ingestion-card {
+  padding: 22px 24px;
+}
+
+.integration-row {
+  min-height: 45px;
+}
+
+.page-footer {
+  margin-top: 22px;
+  padding-top: 13px;
+}
+
+@media (max-width: 1160px) {
+  .content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .command-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 850px) {
+  .content {
+    padding: 24px 20px 16px;
+  }
+
+  .page-title-row h1 {
+    font-size: 24px;
+  }
+
+  .command-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .utilization-card {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .content {
+    padding: 18px 13px 14px;
+  }
+
+  .page-title-row h1 {
+    font-size: 22px;
+  }
+
+  .title-actions {
+    flex-direction: row;
+  }
+
+  .dashboard-grid.overview-dashboard .availability-card,
+  .dashboard-grid.analytics-dashboard .availability-card,
+  .corridor-page-grid .corridor-card,
+  .gantt-card,
+  .coordination-grid.health-grid .integration-health-card,
+  .ingestion-card {
+    padding: 15px !important;
+  }
+
+  .corridor-page-grid .corridor-list {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .overview-dashboard .chart-wrap,
+  .analytics-dashboard .chart-wrap {
+    height: 155px;
+  }
+
+  .command-grid {
+    gap: 10px;
+  }
+}
